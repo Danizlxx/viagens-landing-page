@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripMe - Sua Viagem dos Sonhos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#meetus">NosEncontre</a></li>
+            <li><a href="#advice">Conselhos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <main>
+        <section id="home" class="banner">
+            <div class="banner-text">
+                <h1>Descubra Vilarejos Encantadores</h1>
+                <p>Viaje pelo mundo e viva experiências inesquecíveis!</p>
+            </div>
+        </section>
+
+        <!-- Seção MeetUs / NosEncontre -->
+        <section id="meetus" class="section-content">
+            <h2>NosEncontre</h2>
+            <p>Localizados nos lugares mais incríveis, estamos sempre prontos para ajudar você a planejar sua viagem perfeita.</p>
+        </section>
+
+        <!-- Seção Advice / Conselhos -->
+        <section id="advice" class="section-content">
+            <h2>Conselhos</h2>
+            <p>Dicas valiosas de viagem: como economizar, o que visitar e como aproveitar cada momento.</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 TripMe. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navegação */
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Banner */
+.banner {
+    height: 70vh;
+    background-image: url('https://images.unsplash.com/photo-1504198458649-3128b932f49b?auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.banner-text {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+/* Seções */
+.section-content {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section-content:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.section-content h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.section-content p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+}
